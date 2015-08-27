@@ -1,0 +1,469 @@
+@charset "utf-8";
+
+/* CSS Document */
+html,body {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding-top: 100px;
+	color: #000000;
+	background-color: #e9eaed;
+	background-repeat: repeat;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+	padding: 0px;
+}
+
+header {
+    	background-color: #F00;
+	padding: 0px;
+	width: 100%;
+	height: 90px;
+	margin: 0px;
+}
+
+#headerwrapper2 {
+	width: 1000px;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+
+#headerwrapper {
+	background-color: #F00;
+	padding: 0px;
+	width: 100%;
+	height: 90px;
+	background-position: 0px 0px;
+	top: 0px;
+	position: fixed;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	display: block;
+}
+
+#head {
+	width: 1000px;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+
+
+
+
+#header h1 {
+	margin: 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+	padding-top: 5px;
+	padding-right: 0;
+	padding-bottom: 0px;
+	padding-left: 0;
+}
+
+#headerleft {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	width: 600px;
+}
+#headerright {
+	padding: 0px;
+	width: 400px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 700px;
+}
+.hdprofpic {
+	float: left;
+}
+
+#wrapper {
+	height: 100%;
+	overflow: auto;
+	width: 1000px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	-webkit-box-shadow:rgba(0, 0, 0, 0.8) 0 4px 14px 0;
+	-moz-box-shadow:rgba(0, 0, 0, 0.8) 0 4px 14px 0;
+	box-shadow:rgba(0, 0, 0, 0.8) 0 4px 14px 0;
+	display: block;
+}
+#mainContent {
+	margin: 0px;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	background-color: #CCC;
+}
+#sidebar {
+	float: left;
+	padding: 0px;
+	width: 150px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#globalnav {
+	background-color: #999;
+	padding: 5px;
+	width: 120px;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#globalnav h2 {
+	font-size: 1.6em;
+	color: #09F;
+	margin: 5px;
+}
+
+
+#globalnav ul {
+	text-align: left;
+	padding: 0px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+#globalnav li {
+	text-decoration: none;
+	font-size: 1.2em;
+	margin: 0px;
+	padding-top: 5px;
+	padding-right: 2px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	list-style-type: none;
+}
+#globalnav a {
+	margin: 0px;
+	padding: 0px;
+}
+
+#globalnav a:link, #globalnav a:visited {
+	color: #FFF;
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	height: 61px;
+	width: 123px;
+}
+#globalnav a:hover, #globalnav a:focus, #globalnav a:active {
+	color: #06F;
+	text-decoration: none;
+	background-color: #5EBB39;
+}
+#mainContRight {
+	padding: 10px;
+	width: 830px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 160px;
+}
+#statusinput {
+	background-color: #FFF;
+}
+
+#loginbox {
+	background-color: #999;
+	width: 600px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	padding: 10px;
+}
+#loginform {
+	margin: 5px;
+}
+
+#footer p {
+}
+#profileheader {
+	background-color: #FFF;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+
+
+.portmainconthdr {
+	margin: 0px;
+}
+.portmainconthdr h3 {
+	color: #1F66EB;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+}
+.portmaincont {
+	background-color: #FFF;
+	margin: 0px;
+	width: 700px;
+	border: 1px solid #0CF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 0px;
+}
+
+.quicklinkshdr {
+	color: #FFF;
+	background-color: #09C;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+}
+.quicklinkscont {
+	border: 1px solid #0CC;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	padding: 0px;
+}
+.quicklinkscont ul {
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+.quicklinkscont li {
+	font-size: 85%;
+	list-style-type: none;
+}
+.quicklinkscont a {
+	padding: 5px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+	text-align: left;
+	display: block;
+}
+.quicklinkscont a:link, .quicklinkscont a:visited {
+	text-decoration: none;
+	background-color: #FFF;
+}
+.quicklinkscont a:hover, .quicklinkscont a:focus, .quicklinkscont a:active {
+	color: #FFF;
+	background-color: #06F;
+}
+
+
+.quicklinkshdr h3 {
+	margin: 0px;
+}
+#footer {
+	padding: 10; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#DDDDDD;
+}
+#footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+	font-size: 85%;
+	text-align: center;
+}
+#footer ul {
+	text-align: center;
+	padding: 0px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+#footer li {
+	display: inline;
+}
+
+#footer a:link, #footer a:visited {
+	color: #005689;
+	margin-right: 5px;
+	margin-left: 5px;
+	font-size: 90%;
+	text-decoration: none;
+}
+#footer a:hover, #footer a:focus, #footer a:active {
+	background-color: #0061A6;
+	color: #FFF;
+	text-decoration: none;
+}
+
+a img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	margin: 0px;
+}
+.frame {
+	float: left;
+	width: 195px;
+	margin-top: 40px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 6px;
+	border: 1px solid #00F;
+	height: 250px;
+}
+.frame p {
+	text-align: center;
+	margin: 5px;
+}
+
+
+
+.clearfloat {
+	font-size: 1px;
+	line-height: 0px;
+	clear: both;
+	height: 0px;
+}
+.contentdiv {
+	border: 1px solid #09F;
+	margin: 5px;
+	padding: 0px;
+}
+#usersdisplay {
+	margin: 5px;
+	padding: 5px;
+}
+.statuscont {
+	border: 1px solid #CCC;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	background-color: #FFF;
+}
+.statusprofpic {
+	padding: 0px;
+	float: left;
+	width: 100px;
+	margin-top: 2px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	margin-left: 5px;
+}
+
+.statusimg {
+
+}
+
+.statustext {
+	padding: 5px;
+	width: 450px;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+.commentbox {
+	background-color: #f6f7f8;
+	margin: 0px;
+	padding: 2px;
+}
+.commenttextarea {
+	margin: 1px;
+	padding: 1px;
+	width: 600px;
+	border: 1px solid #d3d6db;
+}
+
+
+
+.bold {
+	font-weight: bold;
+}
+#userinputform {
+	margin: 10px;
+	padding: 5px;
+}
+#mainContent h1 {
+	font-size: 1.6em;
+}
+#video {
+	padding: 5px;
+	height: 600px;
+	width: 600px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+#gallery img {
+	float: left;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+#gallery {
+	padding: 10px;
+}
+.commentuser {
+	color: #00F;
+	display: inline;
+	float: left;
+}
+.commenttext {
+	display: inline;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+}
+.insertcommentdiv {
+	padding: 5px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 1px;
+	margin-left: 0px;
+	border: 1px solid #999;
+}

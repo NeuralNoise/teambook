@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<link href="../mainstyles.css" rel="stylesheet" type="text/css" />
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+
+<div id="wrapper">
+  <div id="head">
+  <div id="header">
+    <h1>Teambook</h1>
+  <!-- end #header --></div>
+  <!-- end #head --></div>
+  <div id="mainContent"><!-- TemplateBeginEditable name="maincontent" -->hello<!-- TemplateEndEditable -->
+<!-- end #mainContent --></div>
+    <br class="clearfloat" />
+  <div id="footer">
+    <p>&copy; Kamal Raza Latif 2013</p>
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+</body>
+</html>

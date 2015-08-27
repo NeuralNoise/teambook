@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<link href="../mainstyles.css" rel="stylesheet" type="text/css" />
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+  <div id="headerwrapper">
+  <div id="head">
+  <div id="headerleft">
+    <h1>Teambook</h1>
+  <!-- end #headerleft --></div>
+  <div id="headerright">
+  <img src="assets/images/profpic/kamal.jpg" width="100" height="100"/>
+  <!-- end #headerright --></div>
+  <!-- end #head --></div>
+  <!-- end #headerwrapper --></div>
+<div id="wrapper">
+    <div id="globalnav">
+       <ul>
+      <li><a href="../index.php">Home</a></li>
+      <li><a href="../events/index.php">Events</a></li>
+      <li><a href="../top5/index.php">Top 5s</a></li>
+      <li><a href="../food/index.php">Food</a></li>
+      <li><a href="../filmandtv/index.php">Film &amp; TV</a></li>
+      <li><a href="../music/index.php">Music</a></li>
+      <li><a href="../articles/index.php">Articles</a></li>
+          <li><a href="../Feed/index.html">Feed</a></li>
+              <li><a href="../myprofile/index.php">My Profile</a></li>
+      <li><a href="../links/index.php">Links</a></li>
+    </ul>
+  <!-- end #globalnav --></div>
+  <div id="mainContent"><!-- TemplateBeginEditable name="maincontent" -->hello<!-- TemplateEndEditable -->
+  <!-- end #mainContent --></div>
+    <br class="clearfloat" />
+  <div id="footer">
+    <ul>
+      <li><a href="../index.php">Home</a> | </li>
+      <li><a href="../events/index.php">Events</a> | </li>
+      <li><a href="../top5/index.php">Top 5s</a> | </li>
+      <li><a href="../filmandtv/index.php">Film &amp; TV</a> | </li>
+      <li><a href="../food/index.php">Food</a> | </li>
+      <li><a href="../music/index.php">Music</a> | </li>
+      <li><a href="../articles/index.php">Articles</a> | </li>
+      <li><a href="../links/index.php">Links</a></li>
+    </ul>
+    <p>E-mail: kam@teambook.co.uk</p>
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+</body>
+</html>
