@@ -4,7 +4,8 @@
 <?php require_once("includes/functions.php"); ?>
 <?php confirm_logged_in(); ?>
 <?php 
-
+    
+    // C.R.U.D - CREATE/INSERT a new Status Record for the logged in User into Status Table
     if (isset($_POST['submit'])) {
         
         $status = trim($_POST['status']); //add mysql_real_escape_string?
@@ -28,6 +29,7 @@
         
     }
     
+    // C.R.U.D. - RETRIEVE/SELECT all Status Update Records for all Users to display on Index Page
     $query = "SELECT status_id, status, user_id, firstname, lastname, userPic
 	      FROM status, users
 	      WHERE users.userId = status.user_id
