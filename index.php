@@ -9,15 +9,15 @@
     if (isset($_POST['submit'])) {
         
         $status = trim($_POST['status']); //add mysql_real_escape_string?
-		$user_id = $_SESSION['user_id'];
-		//$user_status_pic = $_SESSION['userPic'];
-		$first_name = $_SESSION['firstname'];
-		$last_name = $_SESSION['lastname'];
+	$user_id = $_SESSION['user_id'];
+	//$user_status_pic = $_SESSION['userPic'];
+	$first_name = $_SESSION['firstname'];
+	$last_name = $_SESSION['lastname'];
         
         $query = "INSERT INTO status (status, user_id) 
 				  VALUES ('{$status}',{$user_id})";
         
-  		$result_set = mysql_query($query, $tbconnection);
+  	$result_set = mysqli_query($tbconnection, $query);
 		
 		$to = "razakam79@gmail.com, kamal_latif@hotmail.com" . ", ";
 		$to .= "anthony@dhanendran.net, nathanrusson@yahoo.co.uk" . ", ";
@@ -35,7 +35,7 @@
 	      WHERE users.userId = status.user_id
 	      ORDER BY status_id DESC";
     
-    $result_set = mysql_query($query, $tbconnection);
+    $result_set = mysqli_query($tbconnection, $query);
 	// $query2 = "SELECT user_pic_path FROM users";
 	
     $comment_user = "";
