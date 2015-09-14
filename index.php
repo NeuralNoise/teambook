@@ -99,7 +99,7 @@ $(document).ready(function() {
             <h2>Status News Feed</h2>
             <div id="usersdisplay">
                 <?php
-                    while ($user_data = mysql_fetch_array($result_set)) {
+                    while ($user_data = mysqli_fetch_assoc($result_set)) {
 				$status_id = $user_data['status_id'];
 				$status = $user_data['status'];
 				$profileid = $user_data['user_id'];
@@ -132,10 +132,10 @@ $(document).ready(function() {
 			    $query2 .= "AND users.userId = comments.userID ";
 			    $query2 .= "ORDER BY comment_id DESC";
 				
-	$comment_set = mysql_query($query2, $tbconnection);    
+	$comment_set = mysqli_query($connection, $query2);    
 				    
 			    if(isset($comment_set)){
-				while ($comment_data = mysql_fetch_array($comment_set)){
+				while ($comment_data = mysqli_fetch_assoc($comment_set)){
 					$comment = $comment_data['comment'];
 					$comment_user = $comment_data['firstname'] . " " . $comment_data['lastname'];
 				    
@@ -168,7 +168,7 @@ $(document).ready(function() {
 				    $comment_query .= "(comment, statusID, userID) ";
 				    $comment_query .= "VALUES ('{$comment_text}',{$comment_status_id}, {$comment_user_id})";
 				    
-				    $insert_comment = mysql_query($comment_query, $tbconnection);
+				    $insert_comment = mysqli_query($connection, n);
 				}
 		   
                 }                    
