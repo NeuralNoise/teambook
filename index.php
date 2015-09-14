@@ -17,7 +17,7 @@
         $query = "INSERT INTO status (status, user_id) 
 				  VALUES ('{$status}',{$user_id})";
         
-  	$result_set = mysqli_query($tbconnection, $query);
+  	$result_set = mysqli_query($connection, $query);
 		
 		$to = "razakam79@gmail.com, kamal_latif@hotmail.com" . ", ";
 		$to .= "anthony@dhanendran.net, nathanrusson@yahoo.co.uk" . ", ";
@@ -35,7 +35,7 @@
 	      WHERE users.userId = status.user_id
 	      ORDER BY status_id DESC";
     
-    $result_set = mysqli_query($tbconnection, $query);
+    $result_set = mysqli_query($connection, $query);
 	// $query2 = "SELECT user_pic_path FROM users";
 	
     $comment_user = "";
