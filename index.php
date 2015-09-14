@@ -168,7 +168,7 @@ $(document).ready(function() {
 				    $comment_query .= "(comment, statusID, userID) ";
 				    $comment_query .= "VALUES ('{$comment_text}',{$comment_status_id}, {$comment_user_id})";
 				    
-				    $insert_comment = mysqli_query($connection, n);
+				    $insert_comment = mysqli_query($connection, $comment_query);
 				}
 		   
                 }                    
