@@ -1,6 +1,6 @@
 <?php ob_start(); ?>
 <?php require_once("includes/session.php"); ?>
-<?php require_once("Connections/tbconnection.php"); ?>
+<?php require_once("includes/connection.php"); ?>
 <?php require_once("includes/functions.php"); ?>
 <?php confirm_logged_in(); ?>
 <?php 
