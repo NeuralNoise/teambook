@@ -12,7 +12,7 @@
         $query = "SELECT userId, firstname, lastname, userPic
 	      FROM users";
     
-        $result_set = mysql_query($query, $tbconnection);
+        $result_set = mysqli_query($connection, $query);
 	
 	
 ?>  

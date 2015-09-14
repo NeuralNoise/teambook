@@ -13,7 +13,7 @@
 	      FROM users
 	      WHERE userId ={$profileid}";
     
-        $result_set = mysql_query($query, $tbconnection);
+        $result_set = mysqli_query($connection, $query);
 	
 		while($profile_data = mysql_fetch_array($result_set)){
 		    		$profile_first_name = $profile_data['firstname'];
