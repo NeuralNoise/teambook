@@ -62,16 +62,11 @@
 
 	function get_web_path($file_system_path) {
 	  return str_replace($_SERVER['DOCUMENT_ROOT'], '/', $file_system_path);
-	  //$main_part =  str_replace('/home4/yellowta/www', '', $file_system_path);
-	  //$full = "{$main_part}";
-	  //return $full;
 	}
 	
-		function get_web_path_tn($file_system_path) {
-	  return str_replace("C:/wamp/www/teambook_v2/assets/images/uploads/profpic/", 'assets/images/uploads/profpic/tn/', $file_system_path);
-	  //$main_part =  str_replace('/home4/yellowta/www', '', $file_system_path);
-	  //$full = "{$main_part}";
-	  //return $full;
+	function get_web_path_tn($file_system_path) {
+	    $replace_section = $_SERVER['DOCUMENT_ROOT'] . "teambook/assets/images/uploads/profpic/";
+	    return str_replace($replace_section, 'assets/images/uploads/profpic/tn/', $file_system_path);
 	}
 	
 	// This function creates a log.txt file if nto exists and appends the log entry for login/ logout etc into file
