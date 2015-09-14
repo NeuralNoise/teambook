@@ -113,7 +113,7 @@ $(document).ready(function() {
         <div id="profilenavbox"><p><a href="events.php?profileid=<?php echo $profileid; ?>"><?php echo $profile_first_name; ?>'s Events</a></p></div>
     </div>
              <div id="statusinput">
-                <form id="userinputform" action="myprofile/index.php" method="post">
+                <form id="userinputform" action="<?php  echo $_SERVER['PHP_SELF']; ?>" method="post">
                     <fieldset>
                         <label for="status">Status:</label>
                         <input type="text" name="status" size="80" /><br />
