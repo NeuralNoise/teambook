@@ -6,7 +6,8 @@
 <?php 
 
 	// Selecting the Relevant profile Details for Profile ID selected
-		$profileid = $_REQUEST['profileid'];
+	$user_id = $_SESSION['user_id'];
+	$profileid = !empty($_GET['profileid']) ? (int)$_GET['profileid'] : $user_id;
 		
         $query = "SELECT userId, firstname, lastname, userPic
 	      FROM users
