@@ -14,7 +14,7 @@
     
         $result_set = mysqli_query($connection, $query);
 	
-		while($profile_data = mysql_fetch_array($result_set)){
+		while($profile_data = mysqli_fetch_assoc($result_set)){
 		    		$profile_first_name = $profile_data['firstname'];
                     $profile_last_name = $profile_data['lastname'];
                     $profile_status_pic = get_web_path($profile_data['userPic']);

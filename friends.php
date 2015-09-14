@@ -35,7 +35,7 @@
             <h2>My Friends</h2>
             <div id="friendsdisplay">
                 <?php
-                    while($friend_data = mysql_fetch_array($result_set)){
+                    while($friend_data = mysqli_fetch_assoc($result_set)){
 		    			$friendid = $friend_data['userId'];
 						$friend_first_name = $friend_data['firstname'];
                     	$friend_last_name = $friend_data['lastname'];

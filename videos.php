@@ -14,7 +14,7 @@
     
         $result_set = mysqli_query($connection, $query);
 	
-		while($profile_data = mysql_fetch_array($result_set)){
+		while($profile_data = mysqli_fetch_assoc($result_set)){
 		    		$profile_first_name = $profile_data['firstname'];
                     $profile_last_name = $profile_data['lastname'];
                     $profile_status_pic = get_web_path($profile_data['userPic']);
@@ -25,7 +25,7 @@
 					FROM videoalbum 
 					WHERE user_id = {$profileid}";
 					
-		$valbum_set = mysql_query($query, $tbconnection);
+		$valbum_set = mysqli_query($connection, $query);
 ?>  
 <!DOCTYPE html>
 <head>
@@ -72,7 +72,7 @@ $(document).ready(function() {
   <!-- end #profileheader --></div>
 	<div id="profilenav">
     <?php
-		while($valbum_data = mysql_fetch_array($valbum_set)) {
+		while($valbum_data = mysqli_fetch_assoc($valbum_set)) {
 		$valbumname = $valbum_data['valbumname'];
 		$valbumid = $valbum_data['valbumId'];
     	$output = "<div class=\"profilenavbox\"><p><a href=\"videoalbum.php?profileid={$profileid}&valbumid={$valbumid}\">Video Album {$valbumid}: {$valbumname}</a></p></div>";

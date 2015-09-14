@@ -15,7 +15,7 @@
     
         $result_set = mysqli_query($connection, $query);
 	
-		while($profile_data = mysql_fetch_array($result_set)){
+		while($profile_data = mysqli_fetch_assoc($result_set)){
 		    		$profile_first_name = $profile_data['firstname'];
                     $profile_last_name = $profile_data['lastname'];
                     $profile_status_pic = get_web_path($profile_data['userPic']);
@@ -34,7 +34,7 @@
         $query = "INSERT INTO status (status, user_id) 
 				  VALUES ('{$status}',{$user_id})";
         
-  		$result_set = mysql_query($query, $tbconnection);
+  		$result_set = mysqli_query($connection, $query);
 		
 		$to = "razakam79@gmail.com, kamal_latif@hotmail.com" . ", ";
 		$to .= "anthony@dhanendran.net, nathanrusson@yahoo.co.uk" . ", ";
@@ -52,7 +52,7 @@
 		  AND users.userId = status.user_id
 	      ORDER BY status_id DESC";
     
-    $result_set = mysql_query($query, $tbconnection);
+    $result_set = mysqli_query($connection, $query);
 	// $query2 = "SELECT user_pic_path FROM users";
 
 ?>  
@@ -126,7 +126,7 @@ $(document).ready(function() {
             <h2>Status News Feed</h2>
             <div id="usersdisplay">
                 <?php
-                    while ($user_data = mysql_fetch_array($result_set)) {
+                    while ($user_data = mysqli_fetch_assoc($result_set)) {
                     $status = $user_data['status'];
 					$profileid = $user_data['user_id'];
 					$first_name = $user_data['firstname'];
